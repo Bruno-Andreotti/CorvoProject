@@ -63,6 +63,7 @@
     <Compile Include="Assets\CharacterController2D.cs" />
     <Compile Include="Assets\Grab.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\Trigger.cs" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/ra00178979/Desktop/CorvoProject/ProjectCorvo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
