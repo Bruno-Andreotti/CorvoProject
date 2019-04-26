@@ -10,12 +10,12 @@ public class Grab : MonoBehaviour
 
     public bool canhold = true;
     public GameObject tempParent;
-    public GameObject item;
+     GameObject item;
     public bool isHolding = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //item = GameObject.FindGameObjectWithTag("Grabbable");   
     }
 
     // Update is called once per frame
@@ -34,11 +34,11 @@ public class Grab : MonoBehaviour
             item.transform.SetParent(tempParent.transform);
             item.transform.position = tempParent.transform.position;
 
-            if(Input.GetKeyDown(KeyCode.R))
+            /*if(Input.GetKeyDown(KeyCode.R))
             {
                 item.GetComponent<Rigidbody2D>().AddForce(tempParent.transform.forward * throwForce);
                 isHolding = false;
-            }
+            }*/
 
 
         }
@@ -48,10 +48,31 @@ public class Grab : MonoBehaviour
             item.transform.SetParent(null);
             item.transform.position = objectPos;
         }
-
-        if(Input.GetKeyDown(KeyCode.E))
+        if (isHolding == false)
         {
-            isHolding = true;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                isHolding = true;
+
+
+            }
+        }
+        if (isHolding == true)
+        {
+            if (Input.GetKeyUp(KeyCode.E))
+            {
+                item.GetComponent<Rigidbody2D>().AddForce(tempParent.transform.forward * throwForce);
+                isHolding = false;
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Grabbable"))
+        {
+            item = collision.gameObject;
+
         }
     }
 }
