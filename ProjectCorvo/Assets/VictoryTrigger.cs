@@ -10,8 +10,8 @@ public class VictoryTrigger : MonoBehaviour
     {
         if (collision.gameObject.name == "Food")
         {
-            
-            Debug.Log("Vitória");
+            FindObjectOfType<GameManager>().LevelWin();
+           
         }
     }
     

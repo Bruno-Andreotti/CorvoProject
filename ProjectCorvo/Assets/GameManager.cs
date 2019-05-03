@@ -7,8 +7,15 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
+    public GameObject WinGameUI;
 
-    public float restartDelay= 1f;
+    //public float restartDelay= 0f;
+
+        public void LevelWin()
+    {
+        Debug.Log("Vitória");
+        WinGameUI.SetActive(true);
+    }
     // Start is called before the first frame update
     public void EndGame()
     {
@@ -16,7 +23,7 @@ public class GameManager : MonoBehaviour
         {
             gameHasEnded = true;
             Debug.Log("Derrota");
-            Invoke("Restart", restartDelay);
+            Restart();
         }
     }
 
