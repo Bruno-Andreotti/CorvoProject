@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1825216114885583569}
   - component: {fileID: 7644123622734113149}
   m_Layer: 0
-  m_Name: rock-sprite-png-11
+  m_Name: smal-rock_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

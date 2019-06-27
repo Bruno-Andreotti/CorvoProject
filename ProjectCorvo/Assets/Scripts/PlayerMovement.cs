@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // GetComponent<Grab>().isHolding = true;
         HorizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
         animator.SetFloat("Speed",Mathf.Abs(HorizontalMove));
