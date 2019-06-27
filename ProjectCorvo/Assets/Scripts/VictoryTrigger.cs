@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VictoryTrigger : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class VictoryTrigger : MonoBehaviour
         if (collision.gameObject.name == "Food")
         {
             FindObjectOfType<GameManager>().LevelWin();
-           
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
     
