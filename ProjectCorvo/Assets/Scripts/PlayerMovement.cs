@@ -24,6 +24,14 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
             animator.SetBool("IsJumping", true);
         }
+        if (GetComponent<Grab>().isHolding == true)
+        {
+            animator.SetBool("IsGrabbing", true);
+        }
+        else
+        {
+            animator.SetBool("IsGrabbing", false);
+        }
     }
 
     public void OnLanding()
