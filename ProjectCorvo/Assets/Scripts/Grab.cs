@@ -33,6 +33,8 @@ public class Grab : MonoBehaviour
             item.GetComponent<Rigidbody2D>().angularVelocity = 0;
             item.transform.SetParent(tempParent.transform);
             item.transform.position = tempParent.transform.position;
+            //item.GetComponent<Rigidbody2D>().isKinematic = true;
+            item.GetComponent<Collider2D>().enabled = false;
 
             /*if(Input.GetKeyDown(KeyCode.R))
             {
@@ -47,6 +49,8 @@ public class Grab : MonoBehaviour
             objectPos = item.transform.position;
             item.transform.SetParent(null);
             item.transform.position = objectPos;
+            //item.GetComponent<Rigidbody2D>().isKinematic = false;
+            item.GetComponent<Collider2D>().enabled = true;
         }
         if (isHolding == false)
         {
