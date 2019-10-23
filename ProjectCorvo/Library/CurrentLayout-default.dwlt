@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 1341
+  controlID: 878
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 1342
+  controlID: 879
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 1343
+  controlID: 880
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -384,9 +384,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5a510000
-      m_LastClickedID: 20826
-      m_ExpandedIDs: e6f5ffff18f6ffff66f7ffff6af7ffff7af7ffff74fbffff5a510000
+      m_SelectedIDs: 10580000
+      m_LastClickedID: 22544
+      m_ExpandedIDs: 5ef3ffffd0f5ffff28f9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -446,9 +446,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -16.746775, y: 4.5179863, z: -11.548224}
+    m_Target: {x: 414.99756, y: 275.43036, z: -109.5}
     speed: 2
-    m_Value: {x: -16.746775, y: 4.5179863, z: -11.548224}
+    m_Value: {x: 414.99756, y: 275.43036, z: -109.5}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -481,9 +481,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.50292
+    m_Target: 905.0119
     speed: 2
-    m_Value: 5.50292
+    m_Value: 905.0119
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -689,20 +689,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ra00178979\Desktop\CorvoProject\ProjectCorvo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 462f0000
-    m_LastClickedID: 12102
-    m_ExpandedIDs: 00000000462f00004c2f0000ca310000643400001c38000098380000d63b00001c3c0000383d0000403d0000763e000008410000ec410000304200004643000042440000fe4400006445000000ca9a3b
+    scrollPos: {x: 0, y: 621}
+    m_SelectedIDs: da4a0000
+    m_LastClickedID: 19162
+    m_ExpandedIDs: 00000000c63a0000cc3a0000463d0000dc3f00008c430000084400003c470000824700009e480000a6480000dc490000664c00004a4d00008e4d0000a24e00009e4f000058500000be50000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -730,7 +730,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000462f00004c2f0000ca310000643400001c38000098380000d63b00001c3c0000383d0000403d0000763e000008410000ec410000304200004643000042440000fe4400006445000000ca9a3b
+    m_ExpandedIDs: 00000000c63a0000cc3a0000463d0000dc3f00008c430000084400003c470000824700009e480000a6480000dc490000664c00004a4d00008e4d0000a24e00009e4f000058500000be50000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -758,7 +758,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300002c4c0000bc390000d0410000bc5b0000246300002c63000000000000346300003c630000
+    m_ExpandedInstanceIDs: c62300002c4c0000bc390000d0410000bc5b0000246300002c63000000000000346300003c630000fc530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -840,7 +840,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 20826
+  m_LastSelectedObjectID: 22544
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
