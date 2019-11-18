@@ -1,0 +1,1 @@
+Fazer Builds WebGL fora do commit: alguns arquivos de backup(eu imagino) que ele cria são grandes demais pro GitHub
