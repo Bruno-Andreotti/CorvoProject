@@ -12,6 +12,8 @@ public class Chase : MonoBehaviour
     private Transform target;
     private Vector2 startPos;
 
+    public bool facingRight = false;
+
 
 
     void Start()
@@ -23,23 +25,37 @@ public class Chase : MonoBehaviour
 
     void Update()
     {
+       
 
-        if(Vector2.Distance(transform.position, target.position)< stoppingDistance)
+        if (Vector2.Distance(transform.position, target.position)< stoppingDistance)
         {
             transform.position = Vector2.MoveTowards
                 (transform.position, target.position, speed * Time.deltaTime);
+
+            if (target.transform.position.x < gameObject.transform.position.x && facingRight)
+                Flip();
+            if (target.transform.position.x > gameObject.transform.position.x && !facingRight)
+                Flip();
         }
         else if (Vector2.Distance(transform.position, target.position) < stoppingDistance)
         {
             transform.position = startPos.normalized;
         }
     }
-   /* private void OnCollisionEnter2D(Collision2D collision)
+    void Flip()
     {
-        if (collision.gameObject.tag == "Player")
-        {
+        
+        facingRight = !facingRight;
+        Vector3 tmpScale = gameObject.transform.localScale;
+        tmpScale.x *= -1;
+        gameObject.transform.localScale = tmpScale;
+    }
+    /* private void OnCollisionEnter2D(Collision2D collision)
+     {
+         if (collision.gameObject.tag == "Player")
+         {
 
-            Debug.Log("Derrota");
-        }
-    }*/
+             Debug.Log("Derrota");
+         }
+     }*/
 }

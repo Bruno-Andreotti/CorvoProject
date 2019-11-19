@@ -10,7 +10,7 @@ public class Grab : MonoBehaviour
 
     public bool canhold = true;
     public GameObject tempParent;
-    GameObject item;
+    GameObject item ;
     public bool isHolding = false;
     // Start is called before the first frame update
     void Start()
