@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float runSpeed = 40f;
     float HorizontalMove = 0f;
-    bool jump=false;
+    float jump = 0f;
 
     // Update is called once per frame
     void Update()
@@ -19,9 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed",Mathf.Abs(HorizontalMove));
 
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetAxisRaw("Vertical")> 0)
         {
-            jump = true;
+            jump = 20f;
             animator.SetBool("IsJumping", true);
         }
         if (GetComponent<Grab>().isHolding == true)
@@ -42,6 +42,6 @@ public class PlayerMovement : MonoBehaviour
     {
         //move character
         controller.Move(HorizontalMove * Time.fixedDeltaTime, false, jump);
-        jump = false;
+        jump = 0f;
     }
 }
