@@ -73,10 +73,13 @@ public class Grab : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Grabbable"))
+        if (isHolding == false)
         {
-            item = collision.gameObject;
+            if (collision.gameObject.CompareTag("Grabbable"))
+            {
+                item = collision.gameObject;
 
+            }
         }
     }
 }

@@ -151,5 +151,13 @@ public class CharacterController2D : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
     }
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Danger"))
+        {
+            FindObjectOfType<GameManager>().EndGame();
+
+        }
+    }
+
 }
