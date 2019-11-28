@@ -11,7 +11,7 @@ public class VictoryTrigger : MonoBehaviour
     {
         if (collision.gameObject.name == "Food")
         {
-            FindObjectOfType<GameManager>().LevelWin();
+            //FindObjectOfType<GameManager>().LevelWin();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
