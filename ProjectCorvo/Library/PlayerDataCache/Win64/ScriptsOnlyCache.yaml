@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - GameManager
     - Grab
     - MainMenu
+    - PauseMenu
     - PlayerMovement
     - Trigger
     - VictoryTrigger
@@ -38,7 +39,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
@@ -99,8 +99,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10866}
     - Class: 114
       Script: {instanceID: 10932}
-    - Class: 114
-      Script: {instanceID: 10954}
     - Class: 114
       Script: {instanceID: 11184}
     - Class: 114
@@ -181,6 +179,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10494}
     - Class: 114
+      Script: {instanceID: 10932}
+    - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
       Script: {instanceID: 11488}
@@ -190,6 +190,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11936}
     - Class: 114
       Script: {instanceID: 11996}
+    - Class: 114
+      Script: {instanceID: 20722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -252,6 +254,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10494}
     - Class: 114
+      Script: {instanceID: 10932}
+    - Class: 114
       Script: {instanceID: 11262}
     - Class: 114
       Script: {instanceID: 11368}
@@ -263,6 +267,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11936}
     - Class: 114
       Script: {instanceID: 11996}
+    - Class: 114
+      Script: {instanceID: 20722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -325,6 +331,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10494}
     - Class: 114
+      Script: {instanceID: 10932}
+    - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
       Script: {instanceID: 11488}
@@ -334,6 +342,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11936}
     - Class: 114
       Script: {instanceID: 11996}
+    - Class: 114
+      Script: {instanceID: 20722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -396,6 +406,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10494}
     - Class: 114
+      Script: {instanceID: 10932}
+    - Class: 114
       Script: {instanceID: 11262}
     - Class: 114
       Script: {instanceID: 11368}
@@ -407,6 +419,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11936}
     - Class: 114
       Script: {instanceID: 11996}
+    - Class: 114
+      Script: {instanceID: 20722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -469,6 +483,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10494}
     - Class: 114
+      Script: {instanceID: 10932}
+    - Class: 114
       Script: {instanceID: 11262}
     - Class: 114
       Script: {instanceID: 11368}
@@ -482,6 +498,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11936}
     - Class: 114
       Script: {instanceID: 11996}
+    - Class: 114
+      Script: {instanceID: 20722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -544,6 +562,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10494}
     - Class: 114
+      Script: {instanceID: 10932}
+    - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
       Script: {instanceID: 11488}
@@ -555,6 +575,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11936}
     - Class: 114
       Script: {instanceID: 11996}
+    - Class: 114
+      Script: {instanceID: 20722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -617,6 +639,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10494}
     - Class: 114
+      Script: {instanceID: 10932}
+    - Class: 114
       Script: {instanceID: 11262}
     - Class: 114
       Script: {instanceID: 11368}
@@ -628,6 +652,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11936}
     - Class: 114
       Script: {instanceID: 11996}
+    - Class: 114
+      Script: {instanceID: 20722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -690,6 +716,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10494}
     - Class: 114
+      Script: {instanceID: 10932}
+    - Class: 114
       Script: {instanceID: 11262}
     - Class: 114
       Script: {instanceID: 11368}
@@ -703,6 +731,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11936}
     - Class: 114
       Script: {instanceID: 11996}
+    - Class: 114
+      Script: {instanceID: 20722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -765,6 +795,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10494}
     - Class: 114
+      Script: {instanceID: 10932}
+    - Class: 114
       Script: {instanceID: 11368}
     - Class: 114
       Script: {instanceID: 11488}
@@ -776,6 +808,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11936}
     - Class: 114
       Script: {instanceID: 11996}
+    - Class: 114
+      Script: {instanceID: 20722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1393,6 +1427,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 764310837a40c25e0b7a3be858025d63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
